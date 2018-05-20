@@ -1,0 +1,368 @@
+/*common css starts*/
+body {
+    font-family: 'helvetica', sans-serif;
+    font-size: 16px;
+    color: #506a85;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 10px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.equalPadding {
+    padding: 50px 0;
+}
+
+.fullWidth{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.clear, .container:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.red{
+    color: #ff0000;
+}
+.orange{
+    color: #ee3f20;
+}
+.nextLine{
+    display: block;
+}
+
+/*common css ends*/
+/*home section css starts*/
+.bannerImages img, .serviceImage img{
+    width:100%;
+}
+.home {
+    position: relative;
+}
+.home .wrapBanner .content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+/*home section css ends*/
+/*about section css starts*/
+.header h2{
+    text-transform: uppercase;
+}
+.content p{
+    font-size: 16px;
+    text-align: center;
+}
+.header{
+    padding-bottom: 20px;
+    text-align:center;
+}
+/*about section css ends*/
+/*works section css starts*/
+.backgroundImage{
+    background: url("../images/bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.wrapWorks{
+    position: relative;
+    z-index: 2;
+}
+.displayFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+.items{
+    margin: 10px;
+}
+/*works section css ends*/
+/*product section css starts*/
+.tablinks{
+    text-transform: uppercase;
+    width: 16.66%;
+    font-size: 15px;
+    border: 1px solid #000;
+    font-weight: bold;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #9900ab;
+}    
+.tablinks:hover{
+    color:#fff;
+}
+.tab button.active {
+    background-color: #9900ab;
+}
+.tablinks.active {
+    color: #fff;
+}
+.tabcontent {
+    display: none;
+    padding: 50px 12px;
+    border-top: none;
+}
+.productContent{
+    display: flex;
+}
+.rightContent {
+    width:50%;
+}
+.leftContent{
+    padding: 10px;
+    width:50%;
+}
+/*product section css ends*/
+/*service section css starts*/
+/*service section css ends*/
+/*Event section css starts*/
+.eventSec{
+    padding-bottom: 50px;
+}
+.eventDetails {
+    display: flex;
+    text-align: center;
+    border: 1px solid;
+}
+.wrapDetails{
+    width: 33.33%;
+}
+.titleHead{
+    border-bottom: 1px solid;
+    padding: 10px 0;
+}
+.details{
+    padding:5px 0;
+}
+.events{
+    display: flex;
+    padding-bottom: 20px;
+}
+.eventItems{
+    margin: 0 10px;
+}
+.viewButton{
+    text-align: center;
+    border:1px solid;
+    background: #000;
+    width: 100px;
+    padding:5px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.viewButton a{
+    color: #fff;
+}
+/*Event section css ends*/
+/*Blog section starts*/
+.blog, .news{
+    width: 50%;
+}
+.wrapNewsCon{
+    background-color: #ebebeb;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.newsContent{
+    padding: 20px 0;
+    border-bottom: 2px dashed #7b7b7b;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+.gray{
+    color: #7b7b7b;
+    font-size: 16px;
+}
+.newsContent h4{
+    padding-bottom: 10px;
+}
+.blogImg{
+    position: relative;
+    z-index: 1;
+}
+.blogImg img{
+    height:100%;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute; 
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128,0,128,0.2); 
+    z-index: 2;
+}
+.overlay1{
+    position: absolute; 
+    display: block; 
+    width: 100%; 
+    height:100%; 
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0,0,0,0.1); 
+    z-index: 3;
+}
+.videoBlog{
+    margin: 0 10px;
+}
+/*Blog section ends*/
+/*footer section css starts*/
+footer{
+    background-color: #1c1c1c;
+}
+.footerContent{
+    border-bottom: 1px solid #6f6f6f;
+    padding-bottom: 20px;
+}
+.footerItem h2, .footerItem p, .footerItem input, .footerItem a{
+    color: #6f6f6f;
+}
+.footerItem h2{
+    font-size: 14px
+}
+.footerItem p, .footerItem input, .footerItem textarea{
+    font-size: 12px;
+}
+.footerItem{
+    width: 23%;
+    margin: 0 10px;
+}
+.info{
+    display: flex;
+    border-bottom: 1px solid #6f6f6f;
+}
+.info:last-child{
+    border-bottom: 0;
+}
+.infoImg img{
+    max-width: 100px;
+    max-height: 50px;
+    margin: 5px;
+}
+.footerItem input, .footerItem textarea{
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.footerItem a{
+    display: inline-block;
+}
+.space{
+    margin: 5px 0;
+}
+input.inline:after {
+    content:"";
+}
+.footerItem .header{
+    text-align: left;
+}
+.footerItem .btnSend{
+    display: block;
+    color: #fff;
+    width:40%;
+    background-color: #000;
+    padding: 10px 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+.subscribe{
+    border: 1px solid #fff;
+    width: 15px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 2.5px;
+    background: #fff;
+}
+.socialIcons li, .socialIcons p, .socialIcons ul{
+    display: inline-block;
+}
+.bottomFooter{
+    padding: 20px 10px;
+}
+.bottomFooter .displayFlex{
+    justify-content: space-between;
+}
+.socialIcons li{
+    padding: 0 5px;
+}
+.socialIcons p, .copyRight p{
+    color: #6f6f6f;
+}
+.socialIcons a{
+    color: #fff;
+}
+/*footer section css ends*/
