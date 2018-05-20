@@ -42,7 +42,22 @@ $(document).ready(function() {
 		theme: "dark"
 	});
 
+
+	// video popup
+	$('.videos span').on('click', function(event) {
+		event.preventDefault();
+		var getUrl = $(this).find('iframe').attr('src');
+		$('.videoPop').fadeIn();
+		$('.popContainer .popBody iframe').attr('src', getUrl + '?autoplay=1');
+		/* Act on the event */
+	});
+	$
+		('.popContainer .closeBtn').on('click', function(event) {
+
+			$('.videoPop').fadeOut();
+			$('.popContainer .popBody iframe').attr('src', '');
+			/* Act on the event */
+		});
+
+	// video popup end
 });
-// $(window).on("load", function() {
-// 	$(".wrapNewsCon").mCustomScrollbar({});
-// });
