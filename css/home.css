@@ -30,85 +30,101 @@ h4 {
     font-size: 20px;
 }
 
-p{
+p {
     font-size: 14px;
     line-height: 1.5;
 }
+
 .equalPadding {
     padding: 50px 0;
 }
 
-.fullWidth{
+.fullWidth {
     width: 100%;
     margin: 0 auto;
     display: block;
 }
-.clear, .container:after{
+
+.clear, .container:after {
     content: "";
     display: block;
     clear: both;
 }
-.red{
+
+.red {
     color: #ff0000;
 }
-.orange{
+
+.orange {
     color: #ee3f20;
 }
-.nextLine{
+
+.nextLine {
     display: block;
 }
 
 /*common css ends*/
+
 /*home section css starts*/
-.bannerImages img, .serviceImage img{
-    width:100%;
+.bannerImages img, .serviceImage img {
+    width: 100%;
 }
+
 .home {
     position: relative;
 }
+
 .home .wrapBanner .content {
     position: absolute;
     top: 50%;
     left: 0;
     right: 0;
     transform: translateY(-50%);
-    width: 45%;
+    width: 65%;
     margin: 0 auto;
     text-align: center;
-    
+    z-index: 2;
 }
 
 /*home section css ends*/
+
 /*about section css starts*/
-.header h2{
+.header h2 {
     text-transform: uppercase;
 }
-.content p{
+
+.content p {
     font-size: 16px;
     text-align: center;
 }
-.header{
+
+.header {
     padding-bottom: 20px;
-    text-align:center;
+    text-align: center;
 }
+
 /*about section css ends*/
+
 /*works section css starts*/
-.backgroundImage{
+.backgroundImage {
     background: url("../images/bg.jpg");
     height: 100vh;
     background-size: cover;
     position: relative;
 }
-.wrapWorks{
+
+.wrapWorks {
     position: relative;
     z-index: 2;
 }
-.displayFlex{
+
+.displayFlex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.center{
+
+.center {
     position: absolute;
     top: 50%;
     left: 0;
@@ -118,18 +134,22 @@ p{
     text-align: center;
     width: 60%;
 }
-.items{
+
+.items {
     margin: 10px;
 }
+
 /*works section css ends*/
+
 /*product section css starts*/
-.tablinks{
+.tablinks {
     text-transform: uppercase;
     width: 16.66%;
     font-size: 15px;
     border: 1px solid #000;
     font-weight: bold;
 }
+
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -148,189 +168,234 @@ p{
 
 .tab button:hover {
     background-color: #9900ab;
-}    
-.tablinks:hover{
-    color:#fff;
 }
+
+.tablinks:hover {
+    color: #fff;
+}
+
 .tab button.active {
     background-color: #9900ab;
 }
+
 .tablinks.active {
     color: #fff;
 }
+
 .tabcontent {
     display: none;
     padding: 50px 12px;
     border-top: none;
 }
-.productContent{
+
+.productContent {
     display: flex;
 }
+
 .rightContent {
-    width:50%;
+    width: 50%;
 }
-.leftContent{
+
+.leftContent {
     padding: 10px;
-    width:50%;
+    width: 50%;
 }
+
+.leftContent h2 {
+    text-transform: capitalize;
+}
+
 /*product section css ends*/
+
 /*service section css starts*/
+
 /*service section css ends*/
+
 /*Event section css starts*/
-.eventSec{
+.eventSec {
     padding-bottom: 50px;
 }
+
 .eventDetails {
     display: flex;
     text-align: center;
     border: 1px solid;
 }
-.wrapDetails{
+
+.wrapDetails {
     width: 33.33%;
 }
-.titleHead{
+
+.titleHead {
     border-bottom: 1px solid;
     padding: 10px 0;
 }
-.details{
-    padding:5px 0;
+
+.details {
+    padding: 5px 0;
 }
-.events{
+
+.events {
     display: flex;
     padding-bottom: 20px;
 }
-.eventItems{
+
+.eventItems {
     margin: 0 10px;
 }
-.viewButton{
+
+.viewButton {
     text-align: center;
-    border:1px solid;
+    border: 1px solid;
     background: #000;
     width: 100px;
-    padding:5px;
+    padding: 5px;
     margin: 0 auto;
     border-radius: 5px;
 }
-.viewButton a{
+
+.viewButton a {
     color: #fff;
 }
+
 /*Event section css ends*/
+
 /*Blog section starts*/
-.blog, .news{
+.blog, .news {
     width: 50%;
 }
-.wrapNewsCon{
+
+.wrapNewsCon {
     background-color: #ebebeb;
     text-align: center;
     padding-bottom: 10px;
-
+    height: 300px;
 }
-.newsContent{
+
+.newsContent {
     padding: 20px 0;
     border-bottom: 2px dashed #7b7b7b;
     width: 80%;
     margin: 0 auto;
     display: block;
 }
-.gray{
+
+.gray {
     color: #7b7b7b;
     font-size: 16px;
 }
-.newsContent h4{
+
+.newsContent h4 {
     padding-bottom: 10px;
 }
-.blogImg{
+
+.blogImg {
     position: relative;
     z-index: 1;
 }
-.blogImg img{
-    height:100%;
+
+.blogImg img {
+    height: 100%;
     object-fit: cover;
+    width: 100%;
 }
-.overlay{
-    position: absolute; 
-    display: block; 
-    width: 100%; 
-    height: 100%; 
-    top: 0; 
+
+.blogImg .overlay {
+    background: rgb(96, 45, 76, 0.6);
+    position: absolute;
+    top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(128,0,128,0.2); 
+    height: 100%;
+    width: 100%;
     z-index: 2;
 }
-.overlay1{
-    position: absolute; 
-    display: block; 
-    width: 100%; 
-    height:100%; 
+
+.blogImg .overlay.patch {
+    background: rgb(96, 45, 76, 0.7);
+    position: absolute;
     top: 50%;
     left: 0;
-    right: 0;
+    height: 40%;
+    width: 100%;
+    z-index: 2;
     transform: translateY(-50%);
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgba(0,0,0,0.1); 
-    z-index: 3;
 }
-.videoBlog{
+
+.videoBlog {
     margin: 0 10px;
 }
+
 /*Blog section ends*/
+
 /*footer section css starts*/
-footer{
+footer {
     background-color: #1c1c1c;
 }
-.footerContent{
+
+.footerContent {
     border-bottom: 1px solid #6f6f6f;
     padding-bottom: 20px;
 }
-.footerItem h2, .footerItem p, .footerItem input, .footerItem a{
+
+.footerItem h2, .footerItem p, .footerItem input, .footerItem a {
     color: #6f6f6f;
 }
-.footerItem h2{
+
+.footerItem h2 {
     font-size: 14px
 }
-.footerItem p, .footerItem input, .footerItem textarea{
+
+.footerItem p, .footerItem input, .footerItem textarea {
     font-size: 12px;
 }
-.footerItem{
+
+.footerItem {
     width: 23%;
     margin: 0 10px;
 }
-.info{
+
+.info {
     display: flex;
     border-bottom: 1px solid #6f6f6f;
 }
-.info:last-child{
+
+.info:last-child {
     border-bottom: 0;
 }
-.infoImg img{
+
+.infoImg img {
     max-width: 100px;
     max-height: 50px;
     margin: 5px;
 }
-.footerItem input, .footerItem textarea{
+
+.footerItem input, .footerItem textarea {
     width: 50%;
     padding: 5px;
     border-radius: 5px;
+    border: 0;
 }
-.footerItem a{
+
+.footerItem a {
     display: inline-block;
 }
-.space{
+
+.space {
     margin: 5px 0;
 }
+
 input.inline:after {
-    content:"";
+    content: "";
 }
-.footerItem .header{
+
+.footerItem .header {
     text-align: left;
 }
-.footerItem .btnSend{
+
+.footerItem .btnSend {
     display: block;
     color: #fff;
-    width:40%;
+    width: 40%;
     background-color: #000;
     padding: 10px 5px;
     font-size: 12px;
@@ -339,7 +404,8 @@ input.inline:after {
     text-align: center;
     border-radius: 10px;
 }
-.subscribe{
+
+.subscribe {
     border: 1px solid #fff;
     width: 15px;
     text-align: center;
@@ -347,22 +413,93 @@ input.inline:after {
     padding: 2.5px;
     background: #fff;
 }
-.socialIcons li, .socialIcons p, .socialIcons ul{
+
+.socialIcons li, .socialIcons p, .socialIcons ul {
     display: inline-block;
 }
-.bottomFooter{
+
+.bottomFooter {
     padding: 20px 10px;
 }
-.bottomFooter .displayFlex{
+
+.bottomFooter .displayFlex {
     justify-content: space-between;
 }
-.socialIcons li{
+
+.socialIcons li {
     padding: 0 5px;
 }
-.socialIcons p, .copyRight p{
+
+.socialIcons p, .copyRight p {
     color: #6f6f6f;
 }
-.socialIcons a{
+
+.socialIcons a {
     color: #fff;
 }
+
 /*footer section css ends*/
+.videoSlider {
+    position: relative;
+}
+
+.videoSlider .video_container {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videoSlider .video_container video {
+    width: 100%;
+    height: 100;
+}
+
+.videoSlider .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.bannerSlider .slick-dots {
+    bottom: -200px;
+}
+
+.bannerSlider .slick-dots li button:before {
+    font-size: 14px;
+    color: #fff;
+}
+
+.bannerSlider .slick-dots li.slick-active button:before {
+    color: #fff;
+}
+
+.blogCarousal {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    z-index: 4;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.blogCarousal .sliderItems p {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.blogCarousal .sliderItems h2 {
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}

@@ -1,4 +1,7 @@
 @import url("reset.css");
 @import url(font-awesome.css);
+@import url(../lib/slick/slick.css);
+@import url(../lib/slick/slick-theme.css);
+@import url(../lib/scrollbar/jquery.mCustomScrollbar.css);
 @import url("header.css");
 @import url("home.css");

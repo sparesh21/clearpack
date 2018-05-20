@@ -36,17 +36,41 @@
             </div>
          </div>
       </header>
+      <div class="fixedHeader"></div>
       <section class="home">
          <div class="fullWidth">
             <div class="wrapBanner">
-               <div class="bannerImages">
-                  <img src="images/banner1.jpg" alt="jpg">
-               </div>
-               <div class="content">
-                  <h1>Lorem Ipsum is simply dummy
-                     text of the printing and
-                     typesetting industry.
-                  </h1>
+               <div class="videoSlider">
+                  <div class="overlay"></div>
+                  <div class="video_container">
+                     <video preload="metadata" autoplay loop>
+                        <source src="video/intro.mp4" type="video/mp4">
+                        <source src="video/intro.webm" type="video/webm" />
+                        <source src="video/intro.ogv" type="video/ogg">
+                     </video>
+                  </div>
+                  <div class="content">
+                     <div class="bannerSlider">
+                        <div class="sliderItems">
+                           <h1>Lorem Ipsum is simply dummy
+                           text of the printing and
+                           typesetting industry.
+                           </h1>
+                        </div>
+                        <div class="sliderItems">
+                           <h1>Lorem Ipsum is simply dummy
+                           text of the printing and
+                           typesetting industry.
+                           </h1>
+                        </div>
+                        <div class="sliderItems">
+                           <h1>Lorem Ipsum is simply dummy
+                           text of the printing and
+                           typesetting industry.
+                           </h1>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
@@ -57,8 +81,10 @@
                <h2>what we <span class="red">do</span></h2>
             </div>
             <div class="content">
-               <p>Lorem Ipsum is simply dummy text of the<span class="nextLine">
-                  printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+               <p>Lorem Ipsum is simply dummy text of the
+                  <span class="nextLine">
+                     printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </span>
                </p>
             </div>
          </div>
@@ -96,8 +122,11 @@
                <h2>Industry We <span class="orange">Cater To</span></h2>
             </div>
             <div class="content">
-               <p>Lorem Ipsum is simply dummy text of the<span class="nextLine">
-                  printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+               <p>
+                  Lorem Ipsum is simply dummy text of the
+                  <span class="nextLine">
+                     printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </span>
                </p>
             </div>
          </div>
@@ -105,87 +134,81 @@
       <section class="productSec">
          <div class="fullWidth">
             <div class="tab">
-               <button class="tablinks" onclick="openProduct(event, 'Food')">Food</button>
-               <button class="tablinks" onclick="openProduct(event, 'Beveraage')">Beveraage</button>
-               <button class="tablinks" onclick="openProduct(event, 'Home')">Home care</button>
-               <button class="tablinks" onclick="openProduct(event, 'Personal')">Personal care</button>
-               <button class="tablinks" onclick="openProduct(event, 'Pharmaceuticals')">Pharmaceuticals</button>
-               <button class="tablinks" onclick="openProduct(event, 'oils')">oils</button>
+               <button class="tablinks active" data-id="Food">Food</button>
+               <button class="tablinks" data-id="Beveraage">Beveraage</button>
+               <button class="tablinks" data-id="Home">Home care</button>
+               <button class="tablinks" data-id="Personal">Personal care</button>
+               <button class="tablinks" data-id="Pharmaceuticals">Pharmaceuticals</button>
+               <button class="tablinks" data-id="oils">oils</button>
             </div>
-            <div id="Food" class="tabcontent">
+            <div id="Food" class="tabcontent all">
                <div class="productContent">
                   <div class="rightContent">
                      <img src="images/product1.jpg">
                   </div>
                   <div class="leftContent">
-                     <h2 class="red">Lorem Ipsum </h2>
-                     <p>Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                     <h2 class="red">Food </h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                      </p>
                   </div>
                </div>
             </div>
-            <div id="Beveraage" class="tabcontent">
+            <div id="Beveraage" class="tabcontent all">
                <div class="productContent">
                   <div class="rightContent">
                      <img src="images/product1.jpg">
                   </div>
                   <div class="leftContent">
-                     <h2 class="red">Lorem Ipsum </h2>
-                     <p>Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                     <h2 class="red">Beveraage</h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                      </p>
                   </div>
                </div>
             </div>
-            <div id="Home" class="tabcontent">
+            <div id="Home" class="tabcontent all">
                <div class="productContent">
                   <div class="rightContent">
                      <img src="images/product1.jpg">
                   </div>
                   <div class="leftContent">
-                     <h2 class="red">Lorem Ipsum </h2>
-                     <p>Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                     <h2 class="red">Home care </h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                      </p>
                   </div>
                </div>
             </div>
-            <div id="Personal" class="tabcontent">
+            <div id="Personal" class="tabcontent all">
                <div class="productContent">
                   <div class="rightContent">
                      <img src="images/product1.jpg">
                   </div>
                   <div class="leftContent">
-                     <h2 class="red">Lorem Ipsum </h2>
-                     <p>Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                     <h2 class="red">Personal care</h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                      </p>
                   </div>
                </div>
             </div>
-            <div id="Pharmaceuticals" class="tabcontent">
+            <div id="Pharmaceuticals" class="tabcontent all">
                <div class="productContent">
                   <div class="rightContent">
                      <img src="images/product1.jpg">
                   </div>
                   <div class="leftContent">
-                     <h2 class="red">Lorem Ipsum </h2>
-                     <p>Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                     <h2 class="red">Pharmaceuticals </h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                      </p>
                   </div>
                </div>
             </div>
-            <div id="oils" class="tabcontent">
+            <div id="oils" class="tabcontent all">
                <div class="productContent">
                   <div class="rightContent">
                      <img src="images/product1.jpg">
                   </div>
                   <div class="leftContent">
-                     <h2 class="red">Lorem Ipsum </h2>
-                     <p>Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                     <h2 class="red">oils </h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                      </p>
                   </div>
                </div>
@@ -199,76 +222,76 @@
             </div>
             <div class="content">
                <p>Lorem Ipsum is simply dummy text of the<span class="nextLine">
-                  printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
-               </p>
-            </div>
+               printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+            </p>
          </div>
-      </section>
-      <section class="serviceSec">
-         <div class="fullWidth">
-            <div class="serviceImage">
-               <img src="images/Why-choose-us.gif">
-            </div>
+      </div>
+   </section>
+   <section class="serviceSec">
+      <div class="fullWidth">
+         <div class="serviceImage">
+            <img src="images/Why-choose-us.gif">
          </div>
-      </section>
-      <section class="eventSec">
-         <div class="container">
-            <div class="header equalPadding">
-               <h2>we are <span class="orange">attending</span></h2>
-            </div>
-            <div class="wrapEvents">
-               <div class="displayFlex">
-                  <div class="map">
-                     <img src="images/map.png">
-                     <div class="eventDetails">
-                        <div class="wrapDetails">
-                           <div class="titleHead">
-                              <h3>Date</h3>
-                           </div>
-                           <div class="details">
-                              <p>13-18 June 2018</p>
-                           </div>
+      </div>
+   </section>
+   <section class="eventSec">
+      <div class="container">
+         <div class="header equalPadding">
+            <h2>we are <span class="orange">attending</span></h2>
+         </div>
+         <div class="wrapEvents">
+            <div class="displayFlex">
+               <div class="map">
+                  <img src="images/map.png">
+                  <div class="eventDetails">
+                     <div class="wrapDetails">
+                        <div class="titleHead">
+                           <h3>Date</h3>
                         </div>
-                        <div class="wrapDetails">
-                           <div class="titleHead">
-                              <h3>Location</h3>
-                           </div>
-                           <div class="details">
-                              <p>Bangkok, Thailand</p>
-                              <a href="#">
-                                 <p class="red">View all</p>
-                              </a>
-                           </div>
+                        <div class="details">
+                           <p>13-18 June 2018</p>
                         </div>
-                        <div class="wrapDetails">
-                           <div class="titleHead">
-                              <h3>Event Name</h3>
-                           </div>
-                           <div class="details">
-                              <p>Propack Asia</p>
-                           </div>
+                     </div>
+                     <div class="wrapDetails">
+                        <div class="titleHead">
+                           <h3>Location</h3>
+                        </div>
+                        <div class="details">
+                           <p>Bangkok, Thailand</p>
+                           <a href="#">
+                              <p class="red">View all</p>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="wrapDetails">
+                        <div class="titleHead">
+                           <h3>Event Name</h3>
+                        </div>
+                        <div class="details">
+                           <p>Propack Asia</p>
                         </div>
                      </div>
                   </div>
-                  <div class="wrap">
-                     <div class="events">
-                        <div class="eventItems">
-                           <img src="images/event1.jpg">
-                        </div>
-                        <div class="eventItems">
-                           <img src="images/event2.jpg">
-                        </div>
+               </div>
+               <div class="wrap">
+                  <div class="events">
+                     <div class="eventItems">
+                        <img src="images/event1.jpg">
                      </div>
-                     <div class="viewButton">
-                        <a href="#"><i class="fa fa-play-circle" aria-hidden="true"></i> View All</a>
+                     <div class="eventItems">
+                        <img src="images/event2.jpg">
                      </div>
+                  </div>
+                  <div class="viewButton">
+                     <a href="#"><i class="fa fa-play-circle" aria-hidden="true"></i> View All</a>
                   </div>
                </div>
             </div>
          </div>
-      </section>
-      <section class="blogSec">
-         <div class="fullWidth">
+      </div>
+   </section>
+   <section class="blogSec">
+      <div class="fullWidth">
          <div class="displayFlex">
             <div class="blog">
                <div class="header equalPadding">
@@ -276,7 +299,31 @@
                </div>
                <div class="blogImg">
                   <div class="overlay"></div>
-                  <div class="overlay1"></div>
+                  <div class="overlay patch"></div>
+                  <div class="blogCarousal">
+                        <div class="sliderItems">
+                           <h2>Lorem Ipsum</h2>
+                           <p>Lorem Ipsum is simply dummy
+                           text of the printing and
+                           typesetting industry.
+                           </p>
+                        </div>
+                        <div class="sliderItems">
+                           <h2>Lorem Ipsum</h2>
+                           <p>Lorem Ipsum is simply dummy
+                           text of the printing and
+                           typesetting industry.
+                           </p>
+                        </div>
+                        <div class="sliderItems">
+                           <h2>Lorem Ipsum</h2>
+                           <p>Lorem Ipsum is simply dummy
+                           text of the printing and
+                           typesetting industry.
+                           </p>
+                        </div>
+                     
+                  </div>
                   <img src="images/blogimg.jpg">
                </div>
             </div>
@@ -286,21 +333,35 @@
                </div>
                <div class="wrapNewsCon">
                   <div class="newsContent">
-                     <h4><span class="gray">April 6, 2018 </span><span class="orange"> New Product</span></h4>
-                     <p>Lorem Ipsum is simply dummy text
-                        of the printing and typesetting industry.
+                     <h4>
+                     <span class="gray">April 6, 2018 </span>
+                     <span class="orange"> New Product</span>
+                     </h4>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      </p>
                   </div>
                   <div class="newsContent">
-                     <h4><span class="gray">April 6, 2018 </span><span class="orange"> New Product</span></h4>
-                     <p>Lorem Ipsum is simply dummy text
-                        of the printing and typesetting industry.
+                     <h4>
+                     <span class="gray">April 6, 2018 </span>
+                     <span class="orange"> New Product</span>
+                     </h4>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      </p>
                   </div>
                   <div class="newsContent">
-                     <h4><span class="gray">April 6, 2018 </span><span class="orange"> New Product</span></h4>
-                     <p>Lorem Ipsum is simply dummy text
-                        of the printing and typesetting industry.
+                     <h4>
+                     <span class="gray">April 6, 2018 </span>
+                     <span class="orange"> New Product</span>
+                     </h4>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     </p>
+                  </div>
+                  <div class="newsContent">
+                     <h4>
+                     <span class="gray">April 6, 2018 </span>
+                     <span class="orange"> New Product</span>
+                     </h4>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      </p>
                   </div>
                </div>
@@ -311,16 +372,17 @@
                   <div class="videos">
                      <iframe width="160" height="148" src="https://www.youtube.com/embed/qllp4iI4mVc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                      <iframe width="160" height="148" src="https://www.youtube.com/embed/kV9yYQQf2ug" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                      <iframe width="160" height="148" src="https://www.youtube.com/embed/qllp4iI4mVc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                     <iframe width="160" height="148" src="https://www.youtube.com/embed/qllp4iI4mVc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                      <iframe width="160" height="148" src="https://www.youtube.com/embed/kV9yYQQf2ug" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div>
                </div>
             </div>
          </div>
-      </section>
-      <footer>
-         <div class="container">
-          <div class="footerContent">
+      </div>
+   </section>
+   <footer>
+      <div class="container">
+         <div class="footerContent">
             <div class="displayFlex">
                <div class="footerItem">
                   <div class="header equalPadding">
@@ -369,69 +431,56 @@
                   </div>
                   <p>Get up-to-date insights and industry trends by subscribing to our newsletter.</p>
                   <form>
-                    <div class="space">
-                  <input type="email" name="email" placeholder="Enter your email address" class="inline">
-                  <a href="#" class="subscribe"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                </div>
-                </form>
+                     <div class="space">
+                        <input type="email" name="email" placeholder="Enter your email address" class="inline">
+                        <a href="#" class="subscribe"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                     </div>
+                  </form>
                </div>
                <div class="footerItem">
                   <div class="header equalPadding">
                      <h2>How can we help you?</h2>
                   </div>
                   <form>
-                  <div class="space">
-                  <input type="text" name="name" placeholder="Name*">
-                </div>
-                <div class="space">
-                  <input type="email" name="email" placeholder="Email*">
-                </div>
-                <div class="space">
-                  <input type="text" name="subject" placeholder="Subject">
-                </div>
-                  <div class="space">
-                  <textarea name="comment" form="usrform">Your Message</textarea>
-                </div>
-                  <a href="#" class="btnSend">Send Message</a>
-                </form>
+                     <div class="space">
+                        <input type="text" name="name" placeholder="Name*">
+                     </div>
+                     <div class="space">
+                        <input type="email" name="email" placeholder="Email*">
+                     </div>
+                     <div class="space">
+                        <input type="text" name="subject" placeholder="Subject">
+                     </div>
+                     <div class="space">
+                        <textarea name="comment" form="usrform">Your Message</textarea>
+                     </div>
+                     <a href="#" class="btnSend">Send Message</a>
+                  </form>
                </div>
             </div>
-          </div>
-          <div class="bottomFooter container">
-            <div class="displayFlex">
-              <div class="socialIcons">
-                <p>On social networks</p>
-                <ul>
-                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>              
-              </div>
-              <div class="copyRight">
-                <p>Site designed by Digital Republik</p>
-              </div>
-            </div>
-          </div>
          </div>
-      </footer>
-      <script type="text/javascript" src="scripts/jquery.min.js"></script>
-      <script type="text/javascript" src="scripts/script.js"></script>
-      <script type="text/javascript" src="scripts/custom.js"></script>
-      <script type="text/javascript">
-         function openProduct(evt, products) {
-             var i, tabcontent, tablinks;
-             tabcontent = document.getElementsByClassName("tabcontent");
-             for (i = 0; i < tabcontent.length; i++) {
-                 tabcontent[i].style.display = "none";
-             }
-             tablinks = document.getElementsByClassName("tablinks");
-             for (i = 0; i < tablinks.length; i++) {
-                 tablinks[i].className = tablinks[i].className.replace(" active", "");
-             }
-             document.getElementById(products).style.display = "block";
-             evt.currentTarget.className += " active";
-         }
-      </script>
-   </body>
+         <div class="bottomFooter container">
+            <div class="displayFlex">
+               <div class="socialIcons">
+                  <p>On social networks</p>
+                  <ul>
+                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  </ul>
+               </div>
+               <div class="copyRight">
+                  <p>Site designed by Digital Republik</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <script type="text/javascript" src="scripts/jquery.min.js"></script>
+   <script type="text/javascript" src="scripts/script.js"></script>
+   <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+   <script type="text/javascript" src="lib/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script type="text/javascript" src="scripts/custom.js"></script>
+</body>
 </html>
